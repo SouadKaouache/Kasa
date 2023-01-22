@@ -20,6 +20,7 @@
     background-color: #ff6060;
     color: white;
     cursor: pointer;
+
 }
 
 h2 {
@@ -28,13 +29,16 @@ h2 {
 }
 
 .collapseAboutContent {
-    width: 95%;
+    width: 100%;
     margin: auto;
-    margin-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     color: #ff6060;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
+    background-color: #F7F7F7;
+    line-height: 2.5rem;
 }
 
 .collapseAboutTitle :hover,
