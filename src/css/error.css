@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.errorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff6060;
+    flex-direction: column;
+    font-size: 10rem;
+    font-family: "montserrat", serif;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.errorMessage {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.errorlink {
+    font-size: 1rem;
+    color: #ff6060;
+    border-bottom: 1px solid #ff6060;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 400px) {
+    .errorContainer {
+        font-size: 6rem;
+        font-family: "montserrat", serif;
+        font-weight: 700;
+    }
+
+    .errorMessage {
+        font-size: 1.6rem;
+    }
+}

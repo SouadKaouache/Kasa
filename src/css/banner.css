@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+
+    height: 225px;
+    margin: 0 auto;
+}
+
+.imgbanner {
+    background: black;
+    object-fit: cover;
+    width: 95%;
+    height: 225px;
+    left: 100px;
+    border-radius: 25px;
+    filter: brightness(0.7);
+}
+
+.texteBanner {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    color: white;
+    font-family: "Montserrat", Times, serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 880px) {
+    .texteBanner {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .texteBanner {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .texteBanner {
+        font-size: 25px;
+    }
+}

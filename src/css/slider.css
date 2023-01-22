@@ -1,0 +1,63 @@
+.sliders {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    border-radius: 25px;
+    position: relative;
+}
+
+.slideImage {
+    width: 90%;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.left {
+    position: absolute;
+    top: auto;
+    left: 10rem;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.right {
+    position: absolute;
+    top: auto;
+    right: 10rem;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+    .left {
+        left: 8rem;
+    }
+
+    .right {
+        right: 8rem;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .left {
+        left: 6rem;
+    }
+
+    .right {
+        right: 6rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .left {
+        left: 4rem;
+    }
+
+    .right {
+        right: 4rem;
+    }
+}

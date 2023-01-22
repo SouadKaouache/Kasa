@@ -1,0 +1,157 @@
+.residenceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 4rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.residenceTitle {
+    color: #ff6060;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.location {
+    font-size: 1rem;
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+}
+
+.residenceTags {
+    color: white;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.tag {
+    background: #ff6060;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.ratingStars {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hostProfil {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+
+.hostName {
+    width: 93px;
+    width: 52px;
+    font-size: 18px;
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+}
+
+.stars,
+.red-stars {
+    color: #ff6060;
+}
+
+.grey-stars {
+    color: #e3e3e3;
+}
+
+.hostRating {
+    margin: 1rem 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .residenceTags {
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .residenceTags {
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .residenceContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .residenceTags {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .ratingStars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .residenceTitle,
+    .location {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .residenceTags {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        justify-content: space-between;
+    }
+
+    .host {
+        gap: 0;
+    }
+}

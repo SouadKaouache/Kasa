@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.footercontainer {
+    margin-top: 50px;
+}
+
+.logo-white {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 210px;
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 430px) {
+    .footercontainer {
+        font-size: 0.6rem;
+    }
+
+    .texte-font {
+        font-size: 01rem;
+    }
+}
