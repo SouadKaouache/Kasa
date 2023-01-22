@@ -1,3 +1,6 @@
+![redLogo](https://user-images.githubusercontent.com/100757576/213937066-289df1ee-d7b7-45a6-90cc-747deb70eff4.png)
+
+
 # Getting Started with Create React App
 
 Projet n°7 du parcours Développeur web d'OpenClassRooms : 
