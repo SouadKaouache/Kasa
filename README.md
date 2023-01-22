@@ -1,5 +1,4 @@
-![redLogo](https://user-images.githubusercontent.com/100757576/213937066-289df1ee-d7b7-45a6-90cc-747deb70eff4.png)
-
+![redLogo (1) (1)](https://user-images.githubusercontent.com/100757576/213937124-dab39ecd-fead-44f7-968e-58917e267d7b.png)
 
 # Getting Started with Create React App
 
