@@ -1,6 +1,20 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projet n°7 du parcours Développeur web d'OpenClassRooms : 
+Créez une application web de location immobilière avec React
+
+## Objectif : 
+
+Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma fournies.
+Les données du back sont fournies dans un fichier .json intégré au projet.
+
+## Compétences évaluées :
+
+==> Initialiser une application avec Create React App
+
+==> Développer des éléments de l'interface d'un site web grâce à des composants React
+
+==> Configurer la navigation entre les pages de l'application avec React Router
 
 ## Available Scripts
 
