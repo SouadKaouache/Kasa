@@ -9,20 +9,20 @@ function CollapseAbout({ title, content }) {
 
   const [Open, setOpen] = useState(false);
   // Fonction qui déclenche l'ouverture du contenu masqué. //
-  const open = () => {
+  const opening = () => {
     setOpen(true);
   };
   // Fonction qui déclenche la fermeture du contenu masqué. //
-  const close = () => {
+  const closing = () => {
     setOpen(false);
   };
 
   return (
     <div className="collapseAboutAbout">
       <div className="collapseAboutItem">
-        {/* Lorsque Open est false et que l'utilisateur clique sur le contenu on déclenche l'ouverture du contenu masqué en appelant la fonction {open}. */}
+        {/* Lorsque Open est false et que l'utilisateur clique sur le contenu on déclenche l'ouverture du contenu masqué en appelant la fonction {opening}. */}
         {!Open ? (
-          <div onClick={open} className="collapseAboutTitle">
+          <div onClick={opening} className="collapseAboutTitle">
             <h2>{title}</h2>
             <span>
               <i className="fa-sharp fa-solid fa-chevron-down"></i>
@@ -30,8 +30,8 @@ function CollapseAbout({ title, content }) {
           </div>
         ) : (
           /* ":" fait office de 'else' c'est une condition ternaire. 
-          Si open est vrai et que l'utilisateur clique alors on déclenche la fermeture du contenu en appelant la fonction {close}. */
-          <div onClick={close} className="collapseAboutTitle">
+          Si opening est vrai et que l'utilisateur clique alors on déclenche la fermeture du contenu en appelant la fonction {closing}. */
+          <div onClick={closing} className="collapseAboutTitle">
             <h2>{title}</h2>
             <span>
               <i className="fa-solid fa-chevron-up"></i>

@@ -23,7 +23,7 @@ function EquipmentsResidence({ title, content }) {
             </span>
           ) : (
             /* ":" fait office de 'else' c'est une condition ternaire. 
-          Si open est false et que l'utilisateur clique alors on déclenche la fermeture du contenu. */
+          Si opening est false et que l'utilisateur clique alors on déclenche la fermeture du contenu. */
             <span>
               <i className="fa-sharp fa-solid fa-chevron-up"></i>
             </span>

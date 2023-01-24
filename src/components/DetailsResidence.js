@@ -12,7 +12,7 @@ function DetailsResidence() {
   const residence = DataLogements.find((item) => item.id === id);
 
   // Initialisation d'un tableau vide destiné aux étoiles rouges correspondant à la note de l'hôte. //
-  const ratingArray = [];
+  const redStarsArray = [];
   // Initialise d'un tableau vide pour les étoiles grises. //
   const greyStarsArray = [];
   // La constante rating va nous servir à récupérer la note sur 5 contenue dans le fichier data.json. //
@@ -23,7 +23,7 @@ function DetailsResidence() {
   // La boucle for nous permet d'incrémenter i tant que i est inférieur à la note. //
   for (let i = 0; i < rating; i++) {
     // On push la valeur 'red' dans le tableau ratingArray, on le push selon la valeur de la note. //
-    ratingArray.push("full");
+    redStarsArray.push("full");
   }
 
   // La boucle for nous permet d'incrémenter i tant que i est inférieur à la note. //
@@ -64,7 +64,7 @@ function DetailsResidence() {
         </div>
 
         <div className="ratingStars">
-          {ratingArray.map((star, index) => {
+          {redStarsArray.map((star, index) => {
             /* On map le tableau des étoiles pleines, pour chaque élément 'full' du tableau, on crée une balise <i> qui a comme key l'index de chaque élément du tableau.
              Le 2e argument correspond automatiquement à l'index du tableau afin d'avoir une key unique. */
             return <i className="fa-solid fa-star red-stars" key={index}></i>;
