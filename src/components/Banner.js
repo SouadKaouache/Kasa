@@ -3,8 +3,8 @@ import bannerHome from "../assets/bannerHome.png";
 import bannerAbout from "../assets/bannerAbout.png";
 import "../css/banner.css";
 
-/* J'utilise la méthode class extends afin de créer une classe JavaScript qui étende les fonctionnalités de la classe parente pour rendre
-une bannière différente selon la page consultée. */
+/* J'utilise la méthode class extends afin de créer une classe qui étende les fonctionnalités de la classe parente pour rendre
+une bannière différente selon la page consultée. Banner est le composant enfant*/
 class Banner extends Component {
   render() {
     // On définit grâce à une fonction ternaire une image différente à afficher selon que l'utilisateur soit sur la page d'Accueil ou sur la page A propos. //
