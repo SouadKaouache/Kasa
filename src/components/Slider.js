@@ -30,14 +30,20 @@ La source de l'image est définie par un tableau de photos (pictures) et l'image
         className="slideImage"
         alt="présentation de l'appartement"
       />
-      {/* Le clic sur la flèche de gauche appelle la fonction prev qui renvoie à l'image précédente. */}
-      <div onClick={prev} className="left">
-        <i className="fa-sharp fa-solid fa-chevron-left"></i>
-      </div>
-      {/* Le clic sur la flèche de droite appelle la fonction next qui renvoie à l'image suivante. */}
-      <div onClick={next} className="right">
-        <i className="fa-sharp fa-solid fa-chevron-right"></i>
-      </div>
+      {/* Condition ternaire qui vérifie si la longueur de "pictures" est
+      différente de 1, c'est-à-dire s'il y a plus d'une image dans le tableau.
+      Si c'est le cas, il y a un fragment de code qui crée deux boutons pour
+  naviguer entre les images précédente et suivante sinon il n'y a rien. */}
+      {length !== 1 && (
+        <>
+          <div onClick={prev} className="left">
+            <i className="fa-sharp fa-solid fa-chevron-left"></i>
+          </div>
+          <div onClick={next} className="right">
+            <i className="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
+        </>
+      )}
     </div>
   );
 }
