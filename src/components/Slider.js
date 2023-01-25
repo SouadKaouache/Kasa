@@ -30,6 +30,10 @@ La source de l'image est définie par un tableau de photos (pictures) et l'image
         className="slideImage"
         alt="présentation de l'appartement"
       />
+      <p className="counter">
+        {current + 1}/{length}
+      </p>
+      {/* ... */}
       {/* Condition ternaire qui vérifie si la longueur de "pictures" est
       différente de 1, c'est-à-dire s'il y a plus d'une image dans le tableau.
       Si c'est le cas, il y a un fragment de code qui crée deux boutons pour

@@ -3,7 +3,7 @@
 }
 
 .headercontainer {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -36,6 +36,7 @@ a {
 @media only screen and (max-width: 768px) {
     .headercontainer {
         padding: 20px 0;
+        width: 80%;
     }
 
     .nav-menu {
@@ -63,6 +64,7 @@ a {
 @media only screen and (max-width: 400px) {
     .headercontainer {
         padding: 20px 0;
+        width: 82%;
     }
 
     .img {

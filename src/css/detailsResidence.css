@@ -8,16 +8,19 @@
 .details {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .residenceTitle {
     color: #ff6060;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 36px;
     font-family: "Montserrat", sans-serif;
 }
 
 .location {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 2%;
     color: #ff6060;
     font-family: "Montserrat", sans-serif;
 }
@@ -88,6 +91,10 @@
         justify-content: center;
         width: 80%;
     }
+
+    .details {
+        justify-content: flex-start;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -99,8 +106,7 @@
     .residenceContainer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .residenceTags {
@@ -132,6 +138,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .details {
+        justify-content: flex-start;
+    }
+
+    .residenceContainer {
+        align-items: flex-start;
     }
 
     .residenceTags {

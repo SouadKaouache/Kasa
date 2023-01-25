@@ -15,12 +15,15 @@
 
 p {
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 3%;
 }
 
 .errorMessage {
-    font-size: 2rem;
-    font-weight: 400;
+    width: 95%;
+    font-weight: 450;
+    font-size: 1.9rem;
+    margin: auto;
+    text-align: center;
 }
 
 .errorlink {
@@ -30,14 +33,35 @@ p {
     font-weight: 500;
 }
 
+@media only screen and (min-width: 401px) and (max-width:780px) {
+
+
+    .errorMessage {
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center !important;
+        margin-left: 5%;
+        width: 75%;
+        margin-top: 5%;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .errorContainer {
         font-size: 6rem;
         font-family: "montserrat", serif;
         font-weight: 700;
+        padding-top: 15%;
     }
 
     .errorMessage {
         font-size: 1.6rem;
+        text-align: center;
     }
+
+    p {
+        font-weight: 700;
+        font-size: 96px;
+    }
+
 }

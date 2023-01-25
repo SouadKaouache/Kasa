@@ -1,53 +1,94 @@
-* {
-    box-sizing: border-box;
-}
+  * {
+      box-sizing: border-box;
+  }
 
-.banner {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
+  @media only screen and (min-width: 400px) and (max-width: 768px) {
+      .texteBanner {
+          max-width: 80%;
+      }
 
-    height: 225px;
-    margin: 0 auto;
-}
+      .banner {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 25px;
+          height: 225px;
+          margin: 0 auto;
+      }
 
-.imgbanner {
-    background: black;
-    object-fit: cover;
-    width: 95%;
-    height: 225px;
-    left: 100px;
-    border-radius: 25px;
-    filter: brightness(0.7);
-}
+      .imgbanner {
+          background-image: url('../assets/bannerAboutMobile.png') !important;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 25px;
+          width: 90%;
+          height: 90%;
+      }
+  }
 
-.texteBanner {
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    color: white;
-    font-family: "Montserrat", Times, serif;
-    font-size: 48px;
-    font-weight: 500;
-}
+  @media only screen and (min-width: 769px) and (max-width: 880px) {
+      .texteBanner {
+          font-size: 38px;
+      }
 
-@media only screen and (max-width: 880px) {
-    .texteBanner {
-        font-size: 38px;
-    }
-}
+      .banner {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 25px;
+          height: 225px;
+          margin: 0 auto;
+      }
 
-@media only screen and (max-width: 768px) {
-    .texteBanner {
-        width: 80%;
-    }
-}
+      .imgbanner {
+          background: black;
+          width: 95%;
+          height: 100%;
+          border-radius: 25px;
+          filter: brightness(0.7);
+          background-image: url('../assets/bannerAbout.png') !important;
+          background-size: cover !important;
+          background-repeat: no-repeat !important;
+      }
+  }
 
-@media only screen and (max-width: 445px) {
-    .texteBanner {
-        font-size: 25px;
-    }
-}
+  @media only screen and (min-width: 881px) {
+
+
+      .banner {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 25px;
+          height: 225px;
+          margin: 0 auto;
+      }
+
+      .imgbanner {
+          background: black;
+          width: 95%;
+          height: 100%;
+          left: 100px;
+          border-radius: 25px;
+          filter: brightness(0.7);
+          background-image: url('../assets/bannerAbout.png');
+          background-size: cover !important;
+          background-repeat: no-repeat !important;
+      }
+
+      .texteBanner {
+          display: flex;
+          align-items: flex-end;
+          position: absolute;
+          color: white;
+          font-family: "Montserrat", Times, serif;
+          font-size: 48px;
+          font-weight: 500;
+      }
+  }

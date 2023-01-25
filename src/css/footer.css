@@ -14,15 +14,18 @@
     justify-content: center;
     color: white;
     height: 210px;
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
 }
 
 @media only screen and (max-width: 430px) {
     .footercontainer {
-        font-size: 0.6rem;
+        font-size: 0.6rem !important;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 
     .texte-font {
-        font-size: 01rem;
+        font-size: 01rem !important;
     }
 }
