@@ -1,6 +1,6 @@
 .collapseAboutAbout {
-    width: 70%;
     margin: auto;
+    width: 70%;
 }
 
 .collapseAboutTitle {
@@ -20,7 +20,6 @@
     background-color: #ff6060;
     color: white;
     cursor: pointer;
-
 }
 
 h2 {
@@ -29,7 +28,6 @@ h2 {
 }
 
 .collapseAboutContent {
-    width: 100%;
     margin: auto;
     padding-left: 2%;
     padding-right: 2%;
@@ -44,4 +42,21 @@ h2 {
 .collapseAboutTitle :hover,
 .active .collapseAboutTitle {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .collapseAboutTitle {
+        width: 95%;
+        margin: auto;
+    }
+
+    .collapseAboutContent {
+        width: 95%;
+        margin-bottom: 5%;
+    }
+
+    .collapseAboutAbout {
+        width: 95%;
+        margin: auto;
+    }
 }

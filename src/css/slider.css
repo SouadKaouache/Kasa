@@ -27,7 +27,7 @@
 .left {
     position: absolute;
     top: auto;
-    left: 10rem;
+    left: 5rem;
     font-size: 3rem;
     color: white;
     cursor: pointer;
@@ -36,38 +36,72 @@
 .right {
     position: absolute;
     top: auto;
-    right: 10rem;
+    right: 5rem;
     font-size: 3rem;
     color: white;
     cursor: pointer;
 }
 
+@media only screen and (min-width: 1200px) {
+    .left {
+        position: absolute;
+        top: auto;
+        left: 8rem;
+        font-size: 3rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .right {
+        position: absolute;
+        top: auto;
+        right: 8rem;
+        font-size: 3rem;
+        color: white;
+        cursor: pointer;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .left {
-        left: 8rem;
+        left: 3.5rem;
     }
 
     .right {
-        right: 8rem;
+        right: 3.5rem;
+    }
+
+    .counter {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 660px) {
+
+@media only screen and (max-width: 768px) {
+    .counter {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
     .left {
-        left: 6rem;
+        position: absolute;
+        top: auto;
+        left: 2.2rem;
+        font-size: 3rem;
+        color: white;
+        cursor: pointer;
     }
 
     .right {
-        right: 6rem;
+        position: absolute;
+        top: auto;
+        right: 2.2rem;
+        font-size: 3rem;
+        color: white;
+        cursor: pointer;
     }
-}
 
-@media only screen and (max-width: 520px) {
-    .left {
-        left: 4rem;
-    }
-
-    .right {
-        right: 4rem;
+    .slideImage {
+        width: 95%;
     }
 }

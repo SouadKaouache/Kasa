@@ -82,17 +82,29 @@ a {
 
 @media only screen and (max-width: 768px) {
     .cardContainer {
+        width: 100% !important;
         background: white;
+        margin-top: 0 !important;
     }
 
     .cardItem {
+        width: 99% !important;
+        align-items: center;
+        justify-content: center;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .residenceLink {
+        width: 90% !important;
         width: 320px;
-        height: 320px;
+        height: 450px;
+    }
+
+    .residenceImage {
+        width: 100%;
+        justify-content: center;
+        height: 100%;
     }
 }
 

@@ -15,7 +15,7 @@ class Banner extends Component {
       <div className="banner">
         {/* Cette image est destinée à la bannière de la page d'accueil. */}
         <img
-          className="imgbanner"
+          className="imgbanner homeBanner"
           src={bannerHome}
           alt="photographie d'une mer avec des falaises"
         />
